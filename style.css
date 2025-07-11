@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+#layout-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#background-image{
+    height: 100vh;
+    width: 40vw;
+    min-width: 500px;
+}
+
+#div-header{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    min-width: 500px;
+    
+}
+
+#odinLogo{
+    height: 120px;
+    width: 120px;
+}
+
+#odinText{
+    font-size: 80px;
+    color: white;
+    font-family: customFont, sans-serif;
+    margin-left: 20px;
+    letter-spacing: 4px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 60vw;
+    min-width: 800px;
+}
+
+.upper-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 28vh;
+    padding: 100px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+    text-align-last: center;
+    letter-spacing: 0;
+}
+
+
+#sidebarHeader-1::first-letter{
+    font-size: 60px;
+}
+
+#form-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    overflow: auto;
+    min-width: 800px;
+    padding: 40px 120px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+input{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 70%;
+    padding: 0 10px;
+    border: 1px solid #d3d3d3;
+    min-width: 250px;
+}
+
+input:focus{
+    border: 1px solid #1E90FF;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+input[type=password]:invalid:focus {
+    border: 1px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.lower-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 32vh;
+    gap: 50px;
+}
+
+#createAccBtn{
+    width: 230px;
+    height: 60px;
+    background-color: #596D48;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#createAccBtn:active{
+    background-color: #4a5c3f;
+}
+
+#doHaveAnAccount{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+#loginBtn:visited{
+    color: #191970;
+}
+
+
+#sidebarHeader-2 span{
+    font-style: italic;
+}
